@@ -10,10 +10,10 @@ fun main(args: Array<String>) {
     val canAddMoreFish = fitMoreFish(10.0, listOf(), 7, true)
     println("Can add more fish: $canAddMoreFish")
 
-    for (i in 1..10) {
-        val fortune = getFortuneCookie(getBirthday())
+    var fortune = ""
+    while (fortune != "Take it easy and enjoy life!") {
+        fortune = getFortuneCookie(getBirthday())
         println("Your fortune is: $fortune")
-        if (fortune == "Take it easy and enjoy life!") break
     }
 }
 
